@@ -22,9 +22,10 @@ namespace VLTrack
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
-
+            //Changed from standard bootstrap tp Lumen bootstrap 4
+            //On 03-03-2018
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-lumen-4.css",
                       "~/Content/site.css"));
         }
     }
