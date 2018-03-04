@@ -19,6 +19,8 @@ namespace VLTrack.Models
         //DoneBy means: will this be done by the customer or the company?
         public string DoneBy { get; set; }
         public string Notes { get; set; }
+        public Requirement Requirement { get; set; }
+        public Service Service { get; set; }
 
     }
 }

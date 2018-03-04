@@ -36,6 +36,7 @@ namespace VLTrack.Models
         public DbSet<PaymentMethod> PaymentMethod { get; set; }
         public DbSet<ServiceLevelDetail> ServiceLevelDetail { get; set; }
         public DbSet<ServicePhase> ServicePhase { get; set; }
+        public DbSet<ServiceRequirement> ServiceRequirement { get; set; }
 
  /*       
         public DbSet<Address> Address { get; set; }
@@ -43,7 +44,6 @@ namespace VLTrack.Models
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderItem> OrderItem { get; set; }
         public DbSet<PhoneNumber> PhoneNumber { get; set; }
-        //public DbSet<ServiceRequirement> ServiceRequirement { get; set; }
         public DbSet<MediaFile> MediaFile { get; set; }
         public DbSet<OrderPaymentHistory> OrderPaymentHistory { get; set; }
         //public DbSet<OrderItemTransactionHistory> OrderItemTransactionHistory { get; set; }
