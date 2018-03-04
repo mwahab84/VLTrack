@@ -21,5 +21,7 @@ namespace VLTrack.Models
         public byte MinAge { get; set; }
         public double UnitPrice { get; set; }
         public string Notes { get; set; }
+        public Service Service { get; set; }
+        public ServiceLevel ServiceLevel { get; set; }
     }
 }
