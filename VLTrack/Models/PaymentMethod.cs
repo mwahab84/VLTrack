@@ -5,6 +5,9 @@ using System.Web;
 
 namespace VLTrack.Models
 {
+    /// <summary>
+    /// PaymentMethod class manipulates all the payment methods of any order
+    /// </summary>
     public class PaymentMethod
     {
         public int PaymentMethodId { get; set; }
@@ -12,6 +15,5 @@ namespace VLTrack.Models
         public string PymentMethodDesc { get; set; }
         public bool IsCard { get; set; }
         public string CardType{get;set;}
-        public IList<Order> Orders { get; set; }
     }
 }

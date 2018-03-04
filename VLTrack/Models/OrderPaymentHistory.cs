@@ -15,6 +15,6 @@ namespace VLTrack.Models
         public int OrderId { get; set; }
         public int PaymentMethodId { get; set; }
         public double AmountPaid { get; set; }
-        public Order _Order { get; set; }
+        public Order Order { get; set; }
     }
 }

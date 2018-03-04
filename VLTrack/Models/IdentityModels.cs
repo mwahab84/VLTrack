@@ -32,13 +32,13 @@ namespace VLTrack.Models
         public DbSet<ServiceLevel> ServiceLevel { get; set; }
         public DbSet<Transaction> Transaction { get; set; }
         public DbSet<Requirement> Requirement { get; set; }
+        public DbSet<PaymentMethod> PaymentMethod { get; set; }
 
  /*       public DbSet<City> City { get; set; }
         public DbSet<Address> Address { get; set; }
         public DbSet<Customer> Customer { get; set; }
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderItem> OrderItem { get; set; }
-        public DbSet<PaymentMethod> PaymentMethod { get; set; }
         public DbSet<PhoneNumber> PhoneNumber { get; set; }
         //public DbSet<ServiceLevelDetail> ServiceLevelDetail { get; set; }
         //public DbSet<ServicePhase> ServicePhase { get; set; }

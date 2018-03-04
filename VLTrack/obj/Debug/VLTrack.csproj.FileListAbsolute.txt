@@ -62,3 +62,4 @@ C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddServic
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddServiceLevelTableAndSeedData.resources
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddTransactionTableAndSeedData.resources
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddRequirementTable.resources
+C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddPaymentMethodTableAndSeedData.resources
