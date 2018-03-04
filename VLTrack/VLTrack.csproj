@@ -169,6 +169,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803041746515_InitialMigrationWithoutDomainClasses.cs" />
+    <Compile Include="Migrations\201803041746515_InitialMigrationWithoutDomainClasses.Designer.cs">
+      <DependentUpon>201803041746515_InitialMigrationWithoutDomainClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803041758381_AddCountryTable.cs" />
+    <Compile Include="Migrations\201803041758381_AddCountryTable.Designer.cs">
+      <DependentUpon>201803041758381_AddCountryTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -317,6 +325,14 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803041746515_InitialMigrationWithoutDomainClasses.resx">
+      <DependentUpon>201803041746515_InitialMigrationWithoutDomainClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803041758381_AddCountryTable.resx">
+      <DependentUpon>201803041758381_AddCountryTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

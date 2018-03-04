@@ -1,0 +1,276 @@
+namespace VLTrack.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class AddCountryTable : DbMigration
+    {
+        public override void Up()
+        {
+            CreateTable(
+                "dbo.Countries",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        CountryTitle = c.String(),
+                        CountryDesc = c.String(),
+                        CountryNationality = c.String(),
+                        CountryLanguage = c.String(),
+                        Notes = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+
+            Sql("Insert into Countries values ('Afghanistan','','Afghan','','')");
+            Sql("Insert into Countries values ('Åland Islands','','Åland Island','','')");
+            Sql("Insert into Countries values ('Albania','','Albanian','','')");
+            Sql("Insert into Countries values ('Algeria','','Algerian','','')");
+            Sql("Insert into Countries values ('American Samoa','','American Samoan','','')");
+            Sql("Insert into Countries values ('Andorra','','Andorran','','')");
+            Sql("Insert into Countries values ('Angola','','Angolan','','')");
+            Sql("Insert into Countries values ('Anguilla','','Anguillan','','')");
+            Sql("Insert into Countries values ('Antarctica','','Antarctic','','')");
+            Sql("Insert into Countries values ('Antigua and Barbuda','','Antiguan or Barbudan','','')");
+            Sql("Insert into Countries values ('Argentina','','Argentine','','')");
+            Sql("Insert into Countries values ('Armenia','','Armenian','','')");
+            Sql("Insert into Countries values ('Aruba','','Aruban','','')");
+            Sql("Insert into Countries values ('Australia','','Australian','','')");
+            Sql("Insert into Countries values ('Austria','','Austrian','','')");
+            Sql("Insert into Countries values ('Azerbaijan','','Azeri','','')");
+            Sql("Insert into Countries values ('Bahamas','','Bahamian','','')");
+            Sql("Insert into Countries values ('Bahrain','','Bahraini','','')");
+            Sql("Insert into Countries values ('Bangladesh','','Bangladeshi','','')");
+            Sql("Insert into Countries values ('Barbados','','Barbadian','','')");
+            Sql("Insert into Countries values ('Belarus','','Belarusian','','')");
+            Sql("Insert into Countries values ('Belgium','','Belgian','','')");
+            Sql("Insert into Countries values ('Belize','','Belizean','','')");
+            Sql("Insert into Countries values ('Benin','','Beninese','','')");
+            Sql("Insert into Countries values ('Bermuda','','Bermudian','','')");
+            Sql("Insert into Countries values ('Bhutan','','Bhutanese','','')");
+            Sql("Insert into Countries values ('Bolivia','','Bolivian','','')");
+            Sql("Insert into Countries values ('Bosnia and Herzegovina','','Bosnian or Herzegovinian','','')");
+            Sql("Insert into Countries values ('Botswana','','Botswanan','','')");
+            Sql("Insert into Countries values ('Bouvet Island','','Bouvet Island','','')");
+            Sql("Insert into Countries values ('Brazil','','Brazilian','','')");
+            Sql("Insert into Countries values ('British Indian Ocean Territory','','BIOT','','')");
+            Sql("Insert into Countries values ('Brunei Darussalam','','Bruneian','','')");
+            Sql("Insert into Countries values ('Bulgaria','','Bulgarian','','')");
+            Sql("Insert into Countries values ('Burkina Faso','','Burkinabé','','')");
+            Sql("Insert into Countries values ('Burundi','','Burundian','','')");
+            Sql("Insert into Countries values ('Cabo Verde','','Cabo Verdean','','')");
+            Sql("Insert into Countries values ('Cambodia','','Cambodian','','')");
+            Sql("Insert into Countries values ('Cameroon','','Cameroonian','','')");
+            Sql("Insert into Countries values ('Canada','','Canadian','','')");
+            Sql("Insert into Countries values ('Cayman Islands','','Caymanian','','')");
+            Sql("Insert into Countries values ('Central African Republic','','Central African','','')");
+            Sql("Insert into Countries values ('Chad','','Chadian','','')");
+            Sql("Insert into Countries values ('Chile','','Chilean','','')");
+            Sql("Insert into Countries values ('China','','Chinese','','')");
+            Sql("Insert into Countries values ('Christmas Island','','Christmas Island','','')");
+            Sql("Insert into Countries values ('Cocos (Keeling) Islands','','Cocos Island','','')");
+            Sql("Insert into Countries values ('Colombia','','Colombian','','')");
+            Sql("Insert into Countries values ('Comoros','','Comoran','','')");
+            Sql("Insert into Countries values ('Congo','','Congolese','','')");
+            Sql("Insert into Countries values ('Cook Islands','','Cook Island','','')");
+            Sql("Insert into Countries values ('Costa Rica','','Costa Rican','','')");
+            Sql(@"Insert into Countries values ('Côte d''Ivoire','','Ivorian','','')");
+            Sql("Insert into Countries values ('Croatia','','Croatian','','')");
+            Sql("Insert into Countries values ('Cuba','','Cuban','','')");
+            Sql("Insert into Countries values ('Curaçao','','Curaçaoan','','')");
+            Sql("Insert into Countries values ('Cyprus','','Cypriot','','')");
+            Sql("Insert into Countries values ('Czech Republic','','Czech','','')");
+            Sql("Insert into Countries values ('Denmark','','Danish','','')");
+            Sql("Insert into Countries values ('Djibouti','','Djiboutian','','')");
+            Sql("Insert into Countries values ('Dominica','','Dominican','','')");
+            Sql("Insert into Countries values ('Dominican Republic','','Dominican','','')");
+            Sql("Insert into Countries values ('Ecuador','','Ecuadorian','','')");
+            Sql("Insert into Countries values ('Egypt','','Egyptian','','')");
+            Sql("Insert into Countries values ('El Salvador','','Salvadoran','','')");
+            Sql("Insert into Countries values ('Equatorial Guinea','','Equatoguinean','','')");
+            Sql("Insert into Countries values ('Eritrea','','Eritrean','','')");
+            Sql("Insert into Countries values ('Estonia','','Estonian','','')");
+            Sql("Insert into Countries values ('Ethiopia','','Ethiopian','','')");
+            Sql("Insert into Countries values ('Falkland Islands (Malvinas)','','Falkland Island','','')");
+            Sql("Insert into Countries values ('Faroe Islands','','Faroese','','')");
+            Sql("Insert into Countries values ('Fiji','','Fijian','','')");
+            Sql("Insert into Countries values ('Finland','','Finnish','','')");
+            Sql("Insert into Countries values ('France','','French','','')");
+            Sql("Insert into Countries values ('French Guiana','','French Guianese','','')");
+            Sql("Insert into Countries values ('French Polynesia','','French Polynesian','','')");
+            Sql("Insert into Countries values ('French Southern Territories','','French Southern Territories','','')");
+            Sql("Insert into Countries values ('Gabon','','Gabonese','','')");
+            Sql("Insert into Countries values ('Gambia','','Gambian','','')");
+            Sql("Insert into Countries values ('Georgia','','Georgian','','')");
+            Sql("Insert into Countries values ('Germany','','German','','')");
+            Sql("Insert into Countries values ('Ghana','','Ghanaian','','')");
+            Sql("Insert into Countries values ('Gibraltar','','Gibraltar','','')");
+            Sql("Insert into Countries values ('Greece','','Greek','','')");
+            Sql("Insert into Countries values ('Greenland','','Greenlandic','','')");
+            Sql("Insert into Countries values ('Grenada','','Grenadian','','')");
+            Sql("Insert into Countries values ('Guadeloupe','','Guadeloupe','','')");
+            Sql("Insert into Countries values ('Guam','','Guamanian','','')");
+            Sql("Insert into Countries values ('Guatemala','','Guatemalan','','')");
+            Sql("Insert into Countries values ('Guernsey','','Channel Island','','')");
+            Sql("Insert into Countries values ('Guinea','','Guinean','','')");
+            Sql("Insert into Countries values ('Guinea-Bissau','','Bissau-Guinean','','')");
+            Sql("Insert into Countries values ('Guyana','','Guyanese','','')");
+            Sql("Insert into Countries values ('Haiti','','Haitian','','')");
+            Sql("Insert into Countries values ('Heard Island and McDonald Islands','','Heard Island or McDonald Islands','','')");
+            Sql("Insert into Countries values ('Vatican City State','','Vatican','','')");
+            Sql("Insert into Countries values ('Honduras','','Honduran','','')");
+            Sql("Insert into Countries values ('Hong Kong','','Hong Kongese','','')");
+            Sql("Insert into Countries values ('Hungary','','Hungarian','','')");
+            Sql("Insert into Countries values ('Iceland','','Icelandic','','')");
+            Sql("Insert into Countries values ('India','','Indian','','')");
+            Sql("Insert into Countries values ('Indonesia','','Indonesian','','')");
+            Sql("Insert into Countries values ('Iran','','Iranian','','')");
+            Sql("Insert into Countries values ('Iraq','','Iraqi','','')");
+            Sql("Insert into Countries values ('Ireland','','Irish','','')");
+            Sql("Insert into Countries values ('Isle of Man','','Manx','','')");
+            Sql("Insert into Countries values ('Italy','','Italian','','')");
+            Sql("Insert into Countries values ('Jamaica','','Jamaican','','')");
+            Sql("Insert into Countries values ('Japan','','Japanese','','')");
+            Sql("Insert into Countries values ('Jersey','','Channel Island','','')");
+            Sql("Insert into Countries values ('Jordan','','Jordanian','','')");
+            Sql("Insert into Countries values ('Kazakhstan','','Kazakhstani','','')");
+            Sql("Insert into Countries values ('Kenya','','Kenyan','','')");
+            Sql("Insert into Countries values ('Kiribati','','I-Kiribati','','')");
+            Sql("Insert into Countries values ('Korea (Democratic People''s Republic of)','','North Korean','','')");
+            Sql("Insert into Countries values ('Korea (Republic of)','','South Korean','','')");
+            Sql("Insert into Countries values ('Kuwait','','Kuwaiti','','')");
+            Sql("Insert into Countries values ('Kyrgyzstan','','Kyrgyzi','','')");
+            Sql("Insert into Countries values ('Lao People''s Democratic Republic','','Laotian','','')");
+            Sql("Insert into Countries values ('Latvia','','Latvian','','')");
+            Sql("Insert into Countries values ('Lebanon','','Lebanese','','')");
+            Sql("Insert into Countries values ('Lesotho','','Basotho','','')");
+            Sql("Insert into Countries values ('Liberia','','Liberian','','')");
+            Sql("Insert into Countries values ('Libya','','Libyan','','')");
+            Sql("Insert into Countries values ('Liechtenstein','','Liechtenstein','','')");
+            Sql("Insert into Countries values ('Lithuania','','Lithuanian','','')");
+            Sql("Insert into Countries values ('Luxembourg','','Luxembourgish','','')");
+            Sql("Insert into Countries values ('Macao','','Macanese','','')");
+            Sql("Insert into Countries values ('Macedonia (the former Yugoslav Republic of)','','Macedonian','','')");
+            Sql("Insert into Countries values ('Madagascar','','Malagasy','','')");
+            Sql("Insert into Countries values ('Malawi','','Malawian','','')");
+            Sql("Insert into Countries values ('Malaysia','','Malaysian','','')");
+            Sql("Insert into Countries values ('Maldives','','Maldivian','','')");
+            Sql("Insert into Countries values ('Mali','','Malian','','')");
+            Sql("Insert into Countries values ('Malta','','Maltese','','')");
+            Sql("Insert into Countries values ('Marshall Islands','','Marshallese','','')");
+            Sql("Insert into Countries values ('Martinique','','Martiniquais','','')");
+            Sql("Insert into Countries values ('Mauritania','','Mauritanian','','')");
+            Sql("Insert into Countries values ('Mauritius','','Mauritian','','')");
+            Sql("Insert into Countries values ('Mayotte','','Mahoran','','')");
+            Sql("Insert into Countries values ('Mexico','','Mexican','','')");
+            Sql("Insert into Countries values ('Micronesia (Federated States of)','','Micronesian','','')");
+            Sql("Insert into Countries values ('Moldova (Republic of)','','Moldovan','','')");
+            Sql("Insert into Countries values ('Monaco','','Monacan','','')");
+            Sql("Insert into Countries values ('Mongolia','','Mongolian','','')");
+            Sql("Insert into Countries values ('Montenegro','','Montenegrin','','')");
+            Sql("Insert into Countries values ('Montserrat','','Montserratian','','')");
+            Sql("Insert into Countries values ('Morocco','','Moroccan','','')");
+            Sql("Insert into Countries values ('Mozambique','','Mozambican','','')");
+            Sql("Insert into Countries values ('Myanmar','','Burmese','','')");
+            Sql("Insert into Countries values ('Namibia','','Namibian','','')");
+            Sql("Insert into Countries values ('Nauru','','Nauruan','','')");
+            Sql("Insert into Countries values ('Nepal','','Nepali','','')");
+            Sql("Insert into Countries values ('Netherlands','','Dutch','','')");
+            Sql("Insert into Countries values ('New Caledonia','','New Caledonian','','')");
+            Sql("Insert into Countries values ('New Zealand','','New Zealand','','')");
+            Sql("Insert into Countries values ('Nicaragua','','Nicaraguan','','')");
+            Sql("Insert into Countries values ('Niger','','Nigerien','','')");
+            Sql("Insert into Countries values ('Nigeria','','Nigerian','','')");
+            Sql("Insert into Countries values ('Niue','','Niuean','','')");
+            Sql("Insert into Countries values ('Norfolk Island','','Norfolk Island','','')");
+            Sql("Insert into Countries values ('Northern Mariana Islands','','Northern Marianan','','')");
+            Sql("Insert into Countries values ('Norway','','Norwegian','','')");
+            Sql("Insert into Countries values ('Oman','','Omani','','')");
+            Sql("Insert into Countries values ('Pakistan','','Pakistani','','')");
+            Sql("Insert into Countries values ('Palau','','Palauan','','')");
+            Sql("Insert into Countries values ('Palestine','','Palestinian','','')");
+            Sql("Insert into Countries values ('Panama','','Panamanian','','')");
+            Sql("Insert into Countries values ('Papua New Guinea','','Papua New Guinean','','')");
+            Sql("Insert into Countries values ('Paraguay','','Paraguayan','','')");
+            Sql("Insert into Countries values ('Peru','','Peruvian','','')");
+            Sql("Insert into Countries values ('Philippines','','Filipino','','')");
+            Sql("Insert into Countries values ('Pitcairn','','Pitcairn Island','','')");
+            Sql("Insert into Countries values ('Poland','','Polish','','')");
+            Sql("Insert into Countries values ('Portugal','','Portuguese','','')");
+            Sql("Insert into Countries values ('Puerto Rico','','Puerto Rican','','')");
+            Sql("Insert into Countries values ('Qatar','','Qatari','','')");
+            Sql("Insert into Countries values ('Réunion','','Réunionese','','')");
+            Sql("Insert into Countries values ('Romania','','Romanian','','')");
+            Sql("Insert into Countries values ('Russian Federation','','Russian','','')");
+            Sql("Insert into Countries values ('Rwanda','','Rwandan','','')");
+            Sql("Insert into Countries values ('Saint Barthélemy','','Barthélemois','','')");
+            Sql("Insert into Countries values ('Saint Helena Ascension and Tristan da Cunha','','Saint Helenian','','')");
+            Sql("Insert into Countries values ('Saint Kitts and Nevis','','Kittitian or Nevisian','','')");
+            Sql("Insert into Countries values ('Saint Lucia','','Saint Lucian','','')");
+            Sql("Insert into Countries values ('Saint Martin (French part)','','Saint-Martinoise','','')");
+            Sql("Insert into Countries values ('Saint Pierre and Miquelon','','Saint-Pierrais or Miquelonnais','','')");
+            Sql("Insert into Countries values ('Saint Vincent and the Grenadines','','Vincentian','','')");
+            Sql("Insert into Countries values ('Samoa','','Samoan','','')");
+            Sql("Insert into Countries values ('San Marino','','Sammarinese','','')");
+            Sql("Insert into Countries values ('Sao Tome and Principe','','São Toméan','','')");
+            Sql("Insert into Countries values ('Saudi Arabia','','Saudi','','')");
+            Sql("Insert into Countries values ('Senegal','','Senegalese','','')");
+            Sql("Insert into Countries values ('Serbia','','Serbian','','')");
+            Sql("Insert into Countries values ('Seychelles','','Seychellois','','')");
+            Sql("Insert into Countries values ('Sierra Leone','','Sierra Leonean','','')");
+            Sql("Insert into Countries values ('Singapore','','Singaporean','','')");
+            Sql("Insert into Countries values ('Sint Maarten (Dutch part)','','Sint Maarten','','')");
+            Sql("Insert into Countries values ('Slovakia','','Slovak','','')");
+            Sql("Insert into Countries values ('Slovenia','','Slovenian','','')");
+            Sql("Insert into Countries values ('Solomon Islands','','Solomon Island','','')");
+            Sql("Insert into Countries values ('Somalia','','Somali','','')");
+            Sql("Insert into Countries values ('South Africa','','South African','','')");
+            Sql("Insert into Countries values ('South Georgia and the South Sandwich Islands','','South Georgia or South Sandwich Islands','','')");
+            Sql("Insert into Countries values ('South Sudan','','South Sudanese','','')");
+            Sql("Insert into Countries values ('Spain','','Spanish','','')");
+            Sql("Insert into Countries values ('Sri Lanka','','Sri Lankan','','')");
+            Sql("Insert into Countries values ('Sudan','','Sudanese','','')");
+            Sql("Insert into Countries values ('Suriname','','Surinamese','','')");
+            Sql("Insert into Countries values ('Svalbard and Jan Mayen','','Svalbard','','')");
+            Sql("Insert into Countries values ('Swaziland','','Swazi','','')");
+            Sql("Insert into Countries values ('Sweden','','Swedish','','')");
+            Sql("Insert into Countries values ('Switzerland','','Swiss','','')");
+            Sql("Insert into Countries values ('Syrian Arab Republic','','Syrian','','')");
+            Sql("Insert into Countries values ('Taiwan','','Taiwanese','','')");
+            Sql("Insert into Countries values ('Tajikistan','','Tajikistani','','')");
+            Sql("Insert into Countries values ('Tanzania','','Tanzanian','','')");
+            Sql("Insert into Countries values ('Thailand','','Thai','','')");
+            Sql("Insert into Countries values ('Timor-Leste','','Timorese','','')");
+            Sql("Insert into Countries values ('Togo','','Togolese','','')");
+            Sql("Insert into Countries values ('Tokelau','','Tokelauan','','')");
+            Sql("Insert into Countries values ('Tonga','','Tongan','','')");
+            Sql("Insert into Countries values ('Trinidad and Tobago','','Trinidadian or Tobagonian','','')");
+            Sql("Insert into Countries values ('Tunisia','','Tunisian','','')");
+            Sql("Insert into Countries values ('Turkey','','Turkish','','')");
+            Sql("Insert into Countries values ('Turkmenistan','','Turkmen','','')");
+            Sql("Insert into Countries values ('Turks and Caicos Islands','','Turks and Caicos Island','','')");
+            Sql("Insert into Countries values ('Tuvalu','','Tuvaluan','','')");
+            Sql("Insert into Countries values ('Uganda','','Ugandan','','')");
+            Sql("Insert into Countries values ('Ukraine','','Ukrainian','','')");
+            Sql("Insert into Countries values ('United Arab Emirates','','Emirati','','')");
+            Sql("Insert into Countries values ('United Kingdom','','British','','')");
+            Sql("Insert into Countries values ('United States Minor Outlying Islands','','American','','')");
+            Sql("Insert into Countries values ('United States of America','','American','','')");
+            Sql("Insert into Countries values ('Uruguay','','Uruguayan','','')");
+            Sql("Insert into Countries values ('Uzbekistan','','Uzbek','','')");
+            Sql("Insert into Countries values ('Vanuatu','','Vanuatuan','','')");
+            Sql("Insert into Countries values ('Venezuela','','Venezuelan','','')");
+            Sql("Insert into Countries values ('Vietnam','','Vietnamese','','')");
+            Sql("Insert into Countries values ('Virgin Islands (British)','','British Virgin Island','','')");
+            Sql("Insert into Countries values ('Virgin Islands (U.S.)','','U.S. Virgin Island','','')");
+            Sql("Insert into Countries values ('Wallis and Futuna','','Wallisian or Futunan','','')");
+            Sql("Insert into Countries values ('Western Sahara','','Sahrawi','','')");
+            Sql("Insert into Countries values ('Yemen','','Yemeni','','')");
+            Sql("Insert into Countries values ('Zambia','','Zambian','','')");
+            Sql("Insert into Countries values ('Zimbabwe','','Zimbabwean','','')");      
+        }
+        
+        public override void Down()
+        {
+            DropTable("dbo.Countries");
+        }
+    }
+}

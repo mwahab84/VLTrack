@@ -53,3 +53,6 @@ C:\Mywork\DotNet Projects\VLTrack\VLTrack\bin\Microsoft.Owin.Security.MicrosoftA
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.csprojResolveAssemblyReference.cache
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.dll
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.pdb
+C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.InitialMigrationWithoutDomainClasses.resources
+C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.csproj.GenerateResource.Cache
+C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddCountryTable.resources
