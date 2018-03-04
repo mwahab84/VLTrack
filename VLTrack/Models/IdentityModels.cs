@@ -28,6 +28,7 @@ namespace VLTrack.Models
 
         public DbSet<Country> Country { get; set; }
         public DbSet<Phase> Phase { get; set; }
+        public DbSet<Service> Service { get; set; }
 
  /*       public DbSet<City> City { get; set; }
         public DbSet<Address> Address { get; set; }

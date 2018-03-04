@@ -58,3 +58,4 @@ C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.csproj.GenerateResou
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddCountryTable.resources
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddCityTableWithSeeding.resources
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddPhaseTable.resources
+C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddServiceTableAndSeedData.resources
