@@ -209,6 +209,10 @@
     <Compile Include="Migrations\201803041909436_AddServiceLevelDetailsTable.Designer.cs">
       <DependentUpon>201803041909436_AddServiceLevelDetailsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803041913492_AddServicePhasesTable.cs" />
+    <Compile Include="Migrations\201803041913492_AddServicePhasesTable.Designer.cs">
+      <DependentUpon>201803041913492_AddServicePhasesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -388,6 +392,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803041909436_AddServiceLevelDetailsTable.resx">
       <DependentUpon>201803041909436_AddServiceLevelDetailsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803041913492_AddServicePhasesTable.resx">
+      <DependentUpon>201803041913492_AddServicePhasesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

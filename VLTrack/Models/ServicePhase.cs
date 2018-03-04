@@ -15,5 +15,7 @@ namespace VLTrack.Models
         public int PhaseId { get; set; }
         public string ServicePhaseDesc { get; set; }
         public string Notes { get; set; }
+        public Service Service { get; set; }
+        public Phase Phase { get; set; }
     }
 }

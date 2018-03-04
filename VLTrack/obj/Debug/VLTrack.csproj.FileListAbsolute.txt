@@ -64,3 +64,4 @@ C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddTransa
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddRequirementTable.resources
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddPaymentMethodTableAndSeedData.resources
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddServiceLevelDetailsTable.resources
+C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddServicePhasesTable.resources
