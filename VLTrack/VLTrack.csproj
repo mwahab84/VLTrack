@@ -177,6 +177,10 @@
     <Compile Include="Migrations\201803041758381_AddCountryTable.Designer.cs">
       <DependentUpon>201803041758381_AddCountryTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803041801472_AddCityTableWithSeeding.cs" />
+    <Compile Include="Migrations\201803041801472_AddCityTableWithSeeding.Designer.cs">
+      <DependentUpon>201803041801472_AddCityTableWithSeeding.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -332,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803041758381_AddCountryTable.resx">
       <DependentUpon>201803041758381_AddCountryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803041801472_AddCityTableWithSeeding.resx">
+      <DependentUpon>201803041801472_AddCityTableWithSeeding.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
