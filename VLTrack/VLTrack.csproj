@@ -193,6 +193,10 @@
     <Compile Include="Migrations\201803041827436_AddServiceLevelTableAndSeedData.Designer.cs">
       <DependentUpon>201803041827436_AddServiceLevelTableAndSeedData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803041832552_AddTransactionTableAndSeedData.cs" />
+    <Compile Include="Migrations\201803041832552_AddTransactionTableAndSeedData.Designer.cs">
+      <DependentUpon>201803041832552_AddTransactionTableAndSeedData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -360,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803041827436_AddServiceLevelTableAndSeedData.resx">
       <DependentUpon>201803041827436_AddServiceLevelTableAndSeedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803041832552_AddTransactionTableAndSeedData.resx">
+      <DependentUpon>201803041832552_AddTransactionTableAndSeedData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

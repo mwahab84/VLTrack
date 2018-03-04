@@ -30,6 +30,7 @@ namespace VLTrack.Models
         public DbSet<Phase> Phase { get; set; }
         public DbSet<Service> Service { get; set; }
         public DbSet<ServiceLevel> ServiceLevel { get; set; }
+        public DbSet<Transaction> Transaction { get; set; }
 
  /*       public DbSet<City> City { get; set; }
         public DbSet<Address> Address { get; set; }
@@ -42,7 +43,7 @@ namespace VLTrack.Models
         //public DbSet<ServiceLevelDetail> ServiceLevelDetail { get; set; }
         //public DbSet<ServicePhase> ServicePhase { get; set; }
         //public DbSet<ServiceRequirement> ServiceRequirement { get; set; }
-        public DbSet<Transaction> Transaction { get; set; }
+        
         public DbSet<MediaFile> MediaFile { get; set; }
         public DbSet<OrderPaymentHistory> OrderPaymentHistory { get; set; }
         //public DbSet<OrderItemTransactionHistory> OrderItemTransactionHistory { get; set; }
