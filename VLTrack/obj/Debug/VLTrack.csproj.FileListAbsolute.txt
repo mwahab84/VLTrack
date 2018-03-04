@@ -61,3 +61,4 @@ C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddPhaseT
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddServiceTableAndSeedData.resources
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddServiceLevelTableAndSeedData.resources
 C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddTransactionTableAndSeedData.resources
+C:\Mywork\DotNet Projects\VLTrack\VLTrack\obj\Debug\VLTrack.Migrations.AddRequirementTable.resources
