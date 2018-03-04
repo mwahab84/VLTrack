@@ -8,7 +8,7 @@ namespace VLTrack.Models
     /// <summary>
     /// ServiceRequirement class associates the requirements to the services provided.
     /// Also it specifies whether the requirement is mandatory or optional in addition to
-    /// states who will get this requirement done: Customer or the Company.
+    /// stating who will get this requirement done: Customer or the Company.
     /// </summary>
     public class ServiceRequirement
     {

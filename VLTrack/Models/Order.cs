@@ -15,11 +15,11 @@ namespace VLTrack.Models
         public string OrderDesc { get; set; }
         public DateTime OrderDate { get; set; }
         public DateTime OrderTime { get; set; }
-        public double PaidAmount { get; set; }
+        public bool PaymentCompleted { get; set; }
         public double TotalAmount { get; set; }
         public bool Discounted { get; set; }
         public double TotalAmountAfterDiscount { get; set; }
-        public int PaymentMethodId { get; set; }
         public string Notes { get; set; }
+        public IList<OrderPaymentHistory> OrderPaymentHistory { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace VLTrack.Models
     public class MediaFile
     {
         public int Id { get; set; }
-        public int PersonId { get; set; }
+        public int CustomerId { get; set; }
         public string MediaFileTitle { get; set; }
         public string MediaFileDesc { get; set; }
         //MediaFileType specifies whether the file is .JPG, .PNG, .PDF, or .DOCX

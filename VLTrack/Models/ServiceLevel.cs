@@ -12,8 +12,8 @@ namespace VLTrack.Models
         /// such as Standard, VIP, ...etc
         /// </summary>
         public int Id { get; set; }
-        public string SLTitle { get; set; }
-        public string SLDesc { get; set; }
+        public string ServiceLevelTitle { get; set; }
+        public string ServiceLevelDesc { get; set; }
         public string Notes { get; set; }
     }
 }
