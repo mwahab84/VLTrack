@@ -182,6 +182,7 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\OrderItemTransactionHistory.cs" />
+    <Compile Include="Models\OrderPaymentHistory.cs" />
     <Compile Include="Models\PaymentMethod.cs" />
     <Compile Include="Models\Phase.cs" />
     <Compile Include="Models\PhoneNumber.cs" />
