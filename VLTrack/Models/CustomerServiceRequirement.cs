@@ -19,6 +19,10 @@ namespace VLTrack.Models
         public int MediaFileId { get; set; }
         public bool Completed { get; set; }
         public string Notes { get; set; }
+        public Customer Customer { get; set; }
+        public ServiceRequirement ServiceRequirement { get; set; }
+        public ServicePhase ServicePhase { get; set; }
+        public MediaFile MediaFile { get; set; }
 
     }
 }

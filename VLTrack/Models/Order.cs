@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -11,7 +12,8 @@ namespace VLTrack.Models
     public class Order
     {
         public int Id { get; set; }
-        public int CustomerId { get; set; }
+        [Column("MainCustomer")]
+        public int MainCustomerId { get; set; }
         public string OrderDesc { get; set; }
         public DateTime OrderDate { get; set; }
         public DateTime OrderTime { get; set; }
@@ -20,6 +22,9 @@ namespace VLTrack.Models
         public bool Discounted { get; set; }
         public double TotalAmountAfterDiscount { get; set; }
         public string Notes { get; set; }
+        [ForeignKey("MainCustomerId")]
+        public Customer MainCustomer { get; set; }
+        public IList<OrderItem> OrderItems { get; set; }
         public IList<OrderPaymentHistory> OrderPaymentHistory { get; set; }
     }
 }

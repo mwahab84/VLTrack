@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -9,6 +10,8 @@ namespace VLTrack.Models
     /// Order class maniuplates the orders' payments whenever it
     /// may be paid over installments
     /// </summary>
+
+    [Table("OrderPaymentHistory")]
     public class OrderPaymentHistory
     {
         public int Id { get; set; }
@@ -16,5 +19,6 @@ namespace VLTrack.Models
         public int PaymentMethodId { get; set; }
         public double AmountPaid { get; set; }
         public Order Order { get; set; }
+        public PaymentMethod PaymentMethod { get; set; }
     }
 }

@@ -37,17 +37,16 @@ namespace VLTrack.Models
         public DbSet<ServiceLevelDetail> ServiceLevelDetail { get; set; }
         public DbSet<ServicePhase> ServicePhase { get; set; }
         public DbSet<ServiceRequirement> ServiceRequirement { get; set; }
-
- /*       
-        public DbSet<Address> Address { get; set; }
-        public DbSet<Customer> Customer { get; set; }
         public DbSet<Order> Order { get; set; }
         public DbSet<OrderItem> OrderItem { get; set; }
+        public DbSet<Customer> Customer { get; set; }
+        public DbSet<Address> Address { get; set; }
         public DbSet<PhoneNumber> PhoneNumber { get; set; }
         public DbSet<MediaFile> MediaFile { get; set; }
         public DbSet<OrderPaymentHistory> OrderPaymentHistory { get; set; }
-        //public DbSet<OrderItemTransactionHistory> OrderItemTransactionHistory { get; set; }
-        //public DbSet<CustomerServiceRequirement> CustomerServiceRequirement { get; set; }*/
+        public DbSet<OrderItemTransactionHistory> OrderItemTransactionHistory { get; set; }
+        public DbSet<CustomerServiceRequirement> CustomerServiceRequirement { get; set; }
+
 
         public static ApplicationDbContext Create()
         {

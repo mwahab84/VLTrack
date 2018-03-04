@@ -23,7 +23,8 @@ namespace VLTrack.Models
         public double AddressMagnitude { get; set; }
         public string LinkOnMaps { get; set; }
         public string ZipCode { get; set; }
-        public Customer _Customer { get;set; }
+        public Customer Customer { get;set; }
+        public City City { get; set; }
 
     }
 }

@@ -15,6 +15,6 @@ namespace VLTrack.Models
         public string PhoneNumberTitle { get; set; }
         public string PhoneNumberDesc { get; set; }
         public string CustomerPhoneNumber { get; set; }
-        public Customer _Customer { get; set; }
+        public Customer Customer { get; set; }
     }
 }

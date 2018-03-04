@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -17,9 +18,19 @@ namespace VLTrack.Models
         public int CustomerId { get; set; }
         public int ServiceLevelDetailId { get; set; }
         public string OrderItemDesc { get; set; }
+        [Column("InitialTargetCity")]
         public int InitialTargetCityId { get; set; }
+        [Column("FinalTargetCity")]
         public int FinalTargetCityId { get; set; }
         public string Notes { get; set; }
-
+        public Order Order { get; set; }
+        public Customer Customer { get; set; }
+        public ServiceLevelDetail ServiceLevelDetail { get; set; }
+        [ForeignKey("InitialTargetCityId")]
+        
+        public City InitialTargetCity { get; set; }
+        [ForeignKey("FinalTargetCityId")]
+        public City FinalTargetCity { get; set; }
+        public IList<OrderItemTransactionHistory> TransactionsHistory { get; set; }
     }
 }

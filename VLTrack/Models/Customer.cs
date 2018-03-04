@@ -35,10 +35,10 @@ namespace VLTrack.Models
         public Customer ParentCustomer { get; set; }
         public IList<Customer> Dependants { get; set; }
 
-        public IList<Service> Services { get; set; }
+        //public IList<Service> Services { get; set; }
         public IList<Order> Orders { get; set; }
         public IList<MediaFile> MediaFiles { get; set; }
-        public IList<Transaction> Stages { get; set; }
+//        public IList<Transaction> Stages { get; set; }
         public IList<Address> Addresses { get; set; }
         public IList<PhoneNumber> PhoneNumbers { get; set; }
     }

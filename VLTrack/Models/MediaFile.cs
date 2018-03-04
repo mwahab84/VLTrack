@@ -24,5 +24,6 @@ namespace VLTrack.Models
         //Media File Size will be in Kbs
         public double MediaFileSize { get; set; }
         public DateTime MediaFileCreationDate { get; set; }
+        public Customer Customer { get; set; }
     }
 }

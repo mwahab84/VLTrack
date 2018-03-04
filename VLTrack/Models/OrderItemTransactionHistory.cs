@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -10,6 +11,8 @@ namespace VLTrack.Models
     /// Order Placed, Under Review, Initiated, Delivered, ....etc. Beside listing the action start and end date
     /// and the current action status; whether it's active, paused, cancelled, or completed.
     /// </summary>
+
+    [Table("OrderItemTransactionHistory")]
     public class OrderItemTransactionHistory
     {
         public int Id { get; set; }
@@ -21,6 +24,8 @@ namespace VLTrack.Models
         //A Transaction status means is it Active, completed, Paused, or cancelled?
         public string TransactionStatus { get; set; }
         public string Notes { get; set; }
+        public Transaction Transaction { get; set; }
+        public OrderItem OrderItem { get; set; }
 
     }
 }
