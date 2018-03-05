@@ -25,10 +25,14 @@ namespace VLTrack.Controllers
             CutomerName = "Mohamed Abdelwahab",
             CustomerEmail = "m.abdelwahab84@live.com"
         };
+
+        City city = new City();
+
         public ActionResult Index()
         {
-
-            return View(customer);
+            
+            
+            return View(city);
         }
         public ActionResult _PersonalDetails()
         {
